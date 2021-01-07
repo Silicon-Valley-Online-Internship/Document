@@ -44,7 +44,7 @@ Introducing CoCo(Corona Coder) Team's **(Undetermined)**</br>
 ## Member
 
 팀장 : </br>
-최용석 **<이메일 적어주세요 팀장넴>**</br>
+최용석 <dydtjr1717@gmail.com></br>
 
 팀원 : </br>
 류서현 <ryuish541@gmail.com></br>
