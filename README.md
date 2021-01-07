@@ -1,4 +1,4 @@
-# Test repository
+# Food Detector  repository
 
 ![GitHub
 License](https://img.shields.io/github/license/Silicon-Valley-Online-Internship/test)
@@ -12,10 +12,11 @@ forks](https://img.shields.io/github/forks/Silicon-Valley-Online-Internship/test
 ![GitHub
 issues](https://img.shields.io/github/issues/Silicon-Valley-Online-Internship/test?style=social)
 
-팀 CoCo(Corona Coder)의 **(미정)** 를 소개합니다.</br>
-Introducing CoCo(Corona Coder) Team's **(Undetermined)**</br>
+팀 CoCo(Corona Coder)의 **Food Detector** 를 소개합니다.</br>
+Introducing CoCo(Corona Coder) Team's **Food Detector**</br>
 
-이 프로젝트는 **음식의 종류를 구분해주는(뭐라고 적어야 할까용....?)** 웹 프로젝트입니다.<br/> 
+이 프로젝트는 **사진 내의 음식을 인식하는** 기능을 지원하는 웹기반 프로젝트입니다.<br/> 
+This project is a web-based project that supports a function that **recognizes food in pictures**.<br/> 
 
 먼저 teachable machine을 활용한 머신러닝을 통해 POC 검증을 우선적으로 수행할 예정이며,</br>
 
