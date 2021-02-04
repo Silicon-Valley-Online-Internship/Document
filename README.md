@@ -1,4 +1,4 @@
-# FooDetector Project Document repository
+# Pill Good Project Client Part Repository
 
 ![GitHub
 License](https://img.shields.io/github/license/Silicon-Valley-Online-Internship/test)
@@ -12,37 +12,59 @@ forks](https://img.shields.io/github/forks/Silicon-Valley-Online-Internship/test
 ![GitHub
 issues](https://img.shields.io/github/issues/Silicon-Valley-Online-Internship/test?style=social)
 
-팀 CoCo(Corona Coder)의 **FooDetector** 를 소개합니다.</br>
-Introducing CoCo(Corona Coder) Team's **FooDetector**</br>
+팀 K - CoCo(Corona Coder)의 **Pill Good** 를 소개합니다.</br>
+Introducing CoCo(Corona Coder)(K-Team)'s **Pill Good**</br>
 
-이 프로젝트는 **사진 내의 음식을 인식하고** 학습된 데이터를 기반하여 편리한 기능을 지원하는 웹기반 프로젝트입니다.<br/> 
-This project is a web-based project that supports a function that **recognizes food in pictures**.<br/> 
+![제목을 입력해주세요 _002](https://user-images.githubusercontent.com/55476465/106889239-147e2c80-672b-11eb-8379-46ee84f4a2cb.png)
 
-먼저 teachable machine을 활용한 머신러닝을 통해 POC 검증을 우선적으로 수행하였으며,</br>
-이를 기반으로 학습모델을 개발할 예정입니다.
+이 프로젝트는 **사진 내의 알약의 색과 모양, 각인을 인식하고** 학습된 데이터를 기반하여 알약의 종류를 판단하는 기능을 지원하는 웹기반 프로젝트입니다.<br/> 
+This project is a web-based project that supports a function that **recognizes pill's color, shape, imprint in pictures**.<br/> 
 
-프로젝트의 </br>
-1차 목표는  React 기반 웹페이지, flask 웹서버를 구축하여 프로토타입의 간단한 웹 사이트를 제작하는 것이고,</br>
-<img src=https://user-images.githubusercontent.com/55476465/103993819-83726f00-51d9-11eb-85dd-4e0ec655b306.jpg width="50%" height="50%"></br>
-2차 목표는 기존의 프로토타입에 MySQL, spring boot를 활용하여 데이터베이스, 메인 api 서버를 도입하여 서버를 관리하며 보다 탄탄합 웹 사이트로 발전시키는 것입니다.</br>
-<img src=https://user-images.githubusercontent.com/55476465/103994281-1ca18580-51da-11eb-94c5-c62cba782d09.jpg width="50%" height="50%"></br>
+## The technologies used in this project
+- Client
+   - React
+   - Spring
+- Server
+   - Flask
+   - AWS 
+- Data processing
+   - Tensorflow
+   - Maria DB
+   - ELK(Elasticsearch, Logstach, Kibana) 
+- Deployment, Management
+   - Docker
+   - Git
+   - Jira Software
 
-프로젝트 기간이 짧은 관계로(2021.01.04 - 2021.02.05)</br>
-저희 프로젝트는 서비스 개발보다는 다양한 웹 개발도구를 스터디/활용하여 풀스텍 개발과정을 이해하여 견고한 웹페이지를 구현하고, </br>추가적으로 AI머신러닝을 통해 인공지능에 대한 이해를 높이는 것을 우선적인 목표로 하고 있습니다.</br>
 
-프로젝트의 최종 목표는 식단의 칼로리/영양분을 분석하고 이를 통한 유용한 정보를 제공해주는 서비스나 앱을 제작하는 단계로 나아가는 것입니다.</br>
+## How to install
+```> git clone https://github.com/Silicon-Valley-Online-Internship/Client-Spring-React.git```
+</br>intellij 에서 프로젝트 run
 
+## How did we link React and SpringBoot?
+1. IntelliJ 에서 제공해주는 Spring initializar를 통해 Spring Boot 프로젝트 생성 (type : Gradle, dependency : Spring Web )</br></br>
+2. SpringProjectName\src\main\ 경로에 React 프로젝트 파일 추가 ( 아직 react 파일이 없다면  ```create-react-app```를 통해 설치해 줄 수 있다.)</br></br>
+3. 설치가 완료 후 설치한 파일로 경로 이동
+``` 
+> cd [react Project name] 
+> npm install 
+```
+4. 정상적으로 잘 작동된다면 ```npm start ```을 실행</br></br>
+5. ```npm run-script build``` 명령어를 실행 compiled successfully라고 뜨면 제대로 빌드된 것이다.</br></br>
+6. npm run eject를 실행시킨다. -> 만약 에러가 난다면 Git에 전부 데이터를 Push 하고 다시 시도한다.</br></br>
+7. 새로 생성된 [react Project name]/config/paths.js에 가서 appBuild: resolveApp('build')에 /static을 추가해준다.</br>
+```
+appBuild: resolveApp('build') -> appBuild: resolveApp('build/static')
+```
+8. 이후 [react Project name]/build로 가서 모든 파일을 삭제한다.</br></br>
+9. spring의 build.gradle파일에서 react와 spring이 같이 빌드될 수 있도록 정의해준다.(코드 참고)</br></br>
+10. build & run 했을때 아래와 같은 결과가 나오면 </br></br>
+![image](https://user-images.githubusercontent.com/55476465/104579819-d2b81400-569f-11eb-8057-5f0912b37c37.png)</br>
+localhost:8080에서 react화면이 호출되는 것을 확인할 수 있습니다.</br>
 <hr>
 
 ### TODO
- - 화면 설계
- - POC(프로토타입) 웹 구현
- - 설계 문서 보완
- - MySQL 데이터베이스 구축
- - 머신러닝 학습모델 구현
- - Spring boot를 이용한 서버 구축
- - Docker
- - TDD 설계
+final release : 2021-02-04
 
 <hr>
 
